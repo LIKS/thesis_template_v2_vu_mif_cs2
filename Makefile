@@ -13,4 +13,4 @@ ubuntu:
 	sudo cp -r Palemonas-2.1 /usr/share/fonts/truetype/
 
 clean:
-	git clean -dfx
+	rm *.aux *.bbl *.bcf *.blg *.log *.out *.run.xml *.toc
