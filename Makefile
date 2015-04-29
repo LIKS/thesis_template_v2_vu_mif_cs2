@@ -1,8 +1,8 @@
 generuoti:
-	xelatex magistrinis.tex
-	biber magistrinis
-	xelatex magistrinis.tex
-	open magistrinis.pdf || xdg-open magistrinis.pdf
+	xelatex thesis.tex
+	biber thesis
+	xelatex thesis.tex
+	open thesis.pdf || xdg-open thesis.pdf
 
 ubuntu:
 	echo "Diegiamas LaTeX (PdfLaTeX, XeTeX ir kt.)"
