@@ -1,22 +1,27 @@
-Magistrinio darbo šablonas (LaTeX)
-==================================
+Baigiamojo darbo šablonas (LaTeX)
+=================================
 
-Šis magistro baigiamojo darbo šablonas atitinka VU MIF Kompiuterijos katedros
-2015 metų reikalavimus. Šis šablonas taip pat tinkamas kursiniams ir bakalauro
-baigiamiesiems darbams, tereikia atmesti perteklinius elementus.
-Šis šablonas pritaikytas lietuvių kalbai.
+Šis baigiamųjų darbų šablonas yra sukurtas pagal VU MIF Kompiuterijos katedros 
+2015 metų LaTeX šablono V1.0 stilių. Šis šablonas yra perdarytas nuo nulio,
+siekiant išspręsti kai kurias problemas bei supaprastinti šablono naudojimą.
+Šis šablonas tinkamas kursiniams, bakalauro ir magistro baigiamiesiems darbams,
+tereikia pasirinkti tinkamas struktūrines dalis. Šis šablonas pritaikytas
+lietuvių kalbai.
 
-Pagrindinis failas: ``magistrinis.tex``
+Pagrindinis failas: ``thesis.tex``
 
 Norint paruošti aplinką Ubuntu sistemoje šakninėje šio projekto
 direktorijoje pakanka įvykdyti ``make ubuntu``. Įvykdžius šią komandą bus
 įdiegiami XeLaTeX, Biber bei Palemonas šriftas. 
 
-Sukonstruoti išeities failą galima šio projekto šakninėje direktorijoje
+Sukonstruoti PDF išeities failą galima šio projekto šakninėje direktorijoje
 įvykdžius komandą ``make`` (tai galioja Linux distribucijoms).
 
 Keitimų istorija
 ----------------
+- 2015.04.29 (2.1) „Atviras kodas Lietuvai“
+   * Šablonas pritaikytas VU MIF Kompiuterijos katedros antrojo stiliaus
+     reikalavimams.
 - 2015.02.08 (2.0) „Atviras kodas Lietuvai“
    * Pereita prie XeLaTeX, iš šablono pašalinti seni moduliai ir kodas.
    * Pereita prie BibLaTeX su Biber bibliografijos tvarkymui.
