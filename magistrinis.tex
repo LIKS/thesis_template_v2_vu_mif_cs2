@@ -1,4 +1,4 @@
-\documentclass{VUMIFKompMagistrinis}
+\documentclass[fleqn]{VUMIFKompMagistrinis}
 \usepackage{algorithmicx}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -23,8 +23,10 @@
 \author{Vardenis Pavardenis}
 % \status{X kurso, Y grupės studentas}
 % \secondauthor{Vardonis Pavardonis}   % Pridėti antrą autorių
+% \thirdauthor{Vardonis Pavardonis}   % Pridėti antrą autorių
+% \fourthauthor{Vardonis Pavardonis}   % Pridėti antrą autorių
 \supervisor{prof. habil. dr. Vardaitis Pavardaitis}
-\reviewer{doc. dr. Vardauskas Pavardauskas}
+%\reviewer{doc. dr. Vardauskas Pavardauskas}
 \date{Vilnius \\ \the\year}
 
 % Nustatymai
@@ -36,23 +38,23 @@
 
 \tableofcontents
 
-\sectionnonum{Sutartinių terminų sąrašas}
+\sectionnonum{Sutartinių terminų žodynas}
 Sutartinių ženklų, simbolių, vienetų, trumpinimų ir terminų sąrašas sudaromas
 tada, jei ženklų, simbolių, vienetų ir terminų bendras skaičius didesnis nei 10
 ir kiekvienas iš jų tekste kartojasi daugiau nei 3 kartus. 
 
-\sectionnonumnocontent{Anotacija}
+\santrauka{Santrauka}
 Glaustai aprašomas darbo turinys: pristatomi darbo tikslai, analizuotos ir
 tirtos problemos, atlikti eksperimentai bei padarytos išvados, gautos
 rekomentacijos. Santraukos apimtis ne didesnė nei 0,5 puslapio. Santraukų gale
 nurodomi darbo raktiniai žodžiai. 
 % Nurodomi iki 5 svarbiausių temos raktinių žodžių (terminų).
 % Vienas terminas gali susidėti iš kelių žodžių.
-\raktiniaizodziai{raktinis žodis 1, raktinis žodis 2, raktinis žodis 3, raktinis žodis 4, raktinis žodis 5}   
+% \raktiniaizodziai{raktinis žodis 1, raktinis žodis 2, raktinis žodis 3, raktinis žodis 4, raktinis žodis 5}
 
-\sectionnonumnocontent{Summary}
+\summary{Summary}
 Santrauka anglų kalba. Santraukos apimtis ne didesnė nei 0,5 puslapio.
-\keywords{keyword 1, keyword 2, keyword 3, keyword 4, keyword 5}
+% \keywords{keyword 1, keyword 2, keyword 3, keyword 4, keyword 5}
 
 
 \sectionnonum{Įvadas}
@@ -63,7 +65,7 @@ objektas, apibūdinami su tema susiję literatūros ar kitokie šaltiniai, temos
 analizės tvarka, darbo atlikimo aplinkybės, pateikiama žinių apie naudojamus
 instrumentus (programas ir kt.).
 
-\section{Pagrindinė dalis}
+\section{Pirmasis pagrindinės dalies skyrius}
 Pagrindinėje dalyje aprašoma ir pagrindžiama viso darbo metodika, analizuojama
 medžiaga, sukurtos sistemos/modeliai/metodikos/technologijos/algoritmai (toliau
 vadinama - sistemomis*), jų įvertinimai, palyginimai, aprašomi pasiekti
@@ -91,11 +93,14 @@ Citavimo pavyzdžiai: cituojamas vienas šaltinis \cite{PvzStraipsnLt}; cituojam
 keli šaltiniai \cite{PvzStraipsnEn, PvzKonfLt, PvzKonfEn, PvzKnygLt, PvzKnygEn,
 PvzElPubLt, PvzElPubEn, PvzMagistrLt, PvzPhdEn}.
 
-\subsubsection{Skirsnis}
-\subsubsubsection{Straipsnis}
-\subsubsection{Skirsnis}
-\section{Skyrius}
+\subsubsection{Poskyrio poskyris}
+\subsubsubsection{Trečio lygio poskyris}
+\section{Antrasis skyrius}
 \subsection{Poskyris}
+\begin{equation}\label{eq:pavyzdys}
+    y = \sum_{i=1}^N x_i
+\end{equation}
+
 \subsection{Poskyris}
 
 \sectionnonum{Išvados ir rekomendacijos}
@@ -104,17 +109,22 @@ išanalizuota, kažkas sukurta, kažkas įdiegta), pateikiamos išvados (daromi
 nagrinėtų problemų sprendimo metodų palyginimai, siūlomos rekomendacijos,
 akcentuojamos naujovės).
 
-\printbibliography  % Šaltinių sąraše abėcėlės tvarka išdėstomi darbe panaudotų
+\sectionnonum{Ateities tyrimų planas}
+Pristatomi ateities darbai ir/ar jų planas, gairės tolimesniems darbams....
+
+\printbibliography[heading=bibintoc]  % Šaltinių sąraše abėcėlės tvarka išdėstomi darbe panaudotų
 % (cituotų, perfrazuotų ar bent paminėtų) mokslo leidinių, kitokių publikacijų
 % bibliografiniai aprašai. Aprašai pateikiami netransliteruoti.
 
-\appendix  % Priedai
+\startappendix{Priedai}  % Priedai
+Šiame skyriuje trumpai apibūdinama, kas pateikta kiekviename priede.
+
 % Prieduose pateikiami programų tekstai, lentelės, schemos, paveiksliukai ir
 % kita papildoma medžiaga, kuri yra papildanti darbo turinį. Jeigu lentelės,
 % paveiksliukai yra nedideli ir jų nedaug, jie turi būti pateikti pagrindinėje
 % dalyje.
-
-\section{Niauroninio tinklo struktūra}
+\section{Pirmojo priedo pavadinimas}
+Pirmojo priedo tekstas.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{img/MLP}
@@ -123,7 +133,7 @@ akcentuojamos naujovės).
 \end{figure}
 
 
-\section{Eksperimentinio palyginimo rezultatai}
+\section{Antrojo priedo pavadinimas}
 % tablesgenerator.com - converts calculators (e.g. excel) tables to LaTeX
 \begin{table}[H]\footnotesize
   \centering
