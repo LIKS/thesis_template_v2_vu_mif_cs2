@@ -51,12 +51,14 @@
 \cfoot{}
 \rfoot{\thepage} % Numeris bus puslapio apačioje dešinėje
 
-% Nustatomas paveikslėlių ir lentelių šriftas į 10pt
-% \RequirePackage[font=footnotesize,labelfont=bf,textfont=bf]{caption}
+% Nerodyti įspėjimo dėl pakeistos article klasės antraščių stiliaus
+\RequirePackage{silence}
+\WarningFilter{caption}{Unsupported document class}
+
+% Nustatomi lentelių, paveiksliukų antraščių stiliai
 \RequirePackage{caption}
 \captionsetup*[table]{labelsep=period}
 \captionsetup*[figure]{labelsep=space}
-\captionsetup*[table]{labelsep=period}
 \captionsetup*[lstlisting]{labelsep=period}
 
 % Informacijos tituliniame puslapyje kintamieji
@@ -88,7 +90,8 @@
     maxnames=9,
     minnames=4,
 ]{biblatex}
-\RequirePackage{csquotes}
+\RequirePackage[style=lithuanian]{csquotes}
+
 % Pliuso ženklas, kuris rodomas esant >3 autoriams, sumažinamas ir pakeliamas
 \renewcommand*{\labelalphaothers}{\textsuperscript{+}}
 
